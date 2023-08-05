@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap");
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+:root {
+  --accent: #ffc807;
+  --light-mode: white;
+  --dark-mode: #0a0a0a;
+  /* font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif; */
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+main nav {
+  height: fit-content;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  position: fixed;
+  z-index: 5;
+  padding: 24px 0px 24px;
+}
+
+main nav img {
+  height: 84px;
+  width: 118px;
+}
+
+main nav .buttons {
+  display: flex;
+  align-items: center;
+}
+
+main nav .buttons button {
+  /* height: 32px;
+  width: 96px; */
+  padding: 12px 32px 12px;
+  margin: 4px;
+  border-radius: 32px;
+  font-family: Poppins;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  border: none;
+  outline: 1px solid transparent;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+main nav .buttons button:hover {
+  margin-bottom: 16px;
+  box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.1);
+}
+
+main nav .buttons #login {
+  color: black;
+  background: #f6f6f6;
+  transition: 0.3s;
+}
+
+main nav .buttons #login:hover {
+  outline: 1px solid var(--accent);
+}
+
+main nav .buttons #join {
+  color: white;
+  background: var(--accent);
+  transition: 0.3s;
+}
+
+main nav .buttons #join:hover {
+  outline: 1px solid black;
+}
+
+main section {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+}
+
+main section img {
+  width: 750px;
+  margin: 0;
+}
+
+main section p {
+  color: #000;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  width: 600px;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+main section .buttons {
+  display: flex;
+  align-items: center;
+}
+
+main section .buttons button {
+  padding: 16px 48px 16px;
+  margin: 4px;
+  border-radius: 32px;
+  font-family: Poppins;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  border: none;
+  outline: 1px solid transparent;
+  cursor: pointer;
+  transition: 0.3s;
+  color: white;
+  background: var(--accent);
+}
+
+main section .buttons button:hover {
+  margin-bottom: 16px;
+  box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.1);
+  outline: 1px solid black;
+}
+
+main section .buttons #github-btn {
+  padding: 5px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: #f6f6f6;
+}
+
+main section .buttons #github-btn:hover {
+  outline: 1px solid var(--accent);
+}
+
+main section .buttons #github-btn span {
+  font-size: 16px;
+  background: white;
+  color: #6c6c6c;
+  padding: 12px;
+  border-radius: 50%;
+}

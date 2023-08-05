@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link href="https://unpkg.com/movement.css/movement.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <title>LaughRX</title>
+  </head>
+  <body>
+
+    <main>
+      <nav>
+        <img src="/LaughRX-Mascot.png" alt="LaughRX">
+        <div class="buttons">
+          <button onclick="location.href='/auth/login.html'" id="login">
+            Log in
+          </button>
+          <button onclick="location.href='/auth/signup.html'" id="join">
+            Sign up
+          </button>
+        </div>
+      </nav>
+      <section data-m="bounce-up">
+        <img data-m="scale" data-m-duration="0.5" src="/LaughRX.png" alt="LaughRX">
+        <p>Meet LaughRX, the software that prescribes laughter for better mental health. At the tap of a button, you get a random joke from a selection of thousands of dad jokes or a tailored laughing experience with the power of AI.</p>
+        <div class="buttons">
+          <button onclick="location.href='/auth/signup.html'">Sign up</button>
+          <button id="github-btn" onclick="location.href='https://github.com'">
+            <span class="material-symbols-outlined">code</span>
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <script type="module" src="/main.js"></script>
+
+  </body>
+</html>

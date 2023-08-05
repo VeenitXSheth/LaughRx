@@ -1,0 +1,244 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap");
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+:root {
+  --accent: #ffc807;
+  --light-mode: white;
+  --dark-mode: #0a0a0a;
+  /* font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif; */
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+main nav {
+  height: fit-content;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  position: fixed;
+  z-index: 5;
+  padding: 24px 0px 24px;
+}
+
+main nav img {
+  height: 84px;
+  width: 118px;
+}
+
+main nav .buttons {
+  display: flex;
+  align-items: center;
+}
+
+main nav .buttons button {
+  /* height: 32px;
+  width: 96px; */
+  padding: 12px 32px 12px;
+  margin: 4px;
+  border-radius: 32px;
+  text-align: center;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  border: none;
+  outline: 1px solid transparent;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+main nav .buttons button:hover {
+  margin-bottom: 16px;
+  box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.1);
+}
+
+main nav .buttons #sign-out {
+  padding: 12px 32px 12px;
+  margin: 4px;
+  border-radius: 32px;
+  text-align: center;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  border: none;
+  outline: 1px solid transparent;
+  cursor: pointer;
+  transition: 0.3s;
+  background: var(--accent);
+  color: white;
+}
+
+main nav .buttons #sign-out:hover {
+  margin-bottom: 16px;
+  box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.1);
+  outline: 1px solid black;
+}
+
+main nav .buttons .sign-up {
+  padding: 4px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: #f6f6f6;
+}
+
+main nav .buttons .sign-up:hover {
+  outline: 1px solid var(--accent);
+}
+
+main nav .buttons .sign-up span {
+  font-size: 16px;
+  background: white;
+  color: #6c6c6c;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+main section {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main #settings-tab {
+  display: none;
+}
+
+main #settings-tab h2 {
+  margin: 0;
+  font-size: 36px;
+  margin-top: 64px;
+}
+
+main #settings-tab form {
+  margin-top: 64px;
+  display: flex;
+  flex-direction: column;
+}
+
+main #settings-tab form label {
+  margin-bottom: 4px;
+}
+
+main #settings-tab form input {
+  margin-bottom: 16px;
+  padding: 12px 20px 12px;
+  border-radius: 4px;
+  border: 1px solid var(--dark-mode);
+  background: transparent;
+  cursor: text;
+  font-weight: 500;
+  transition: 0.3s ease;
+  outline: 1px solid transparent;
+}
+
+main #settings-tab form input:hover {
+  outline: 1px solid gold;
+  border: 1px solid gold;
+}
+
+main #settings-tab form input:focus {
+  outline: 1px solid gold;
+  border: 1px solid gold;
+}
+
+main #settings-tab form button {
+  background: var(--accent);
+  color: white;
+  border: none;
+  padding: 14px 32px 14px;
+  border-radius: 4px;
+  margin-top: 0px;
+  cursor: pointer;
+  outline: 1px solid transparent;
+  transition: 0.3s ease;
+  margin-bottom: 64px;
+}
+
+main #settings-tab form button:hover {
+  outline: 1px solid black;
+  box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.1);
+}
+
+main #settings-tab button {
+  background: var(--accent);
+  color: white;
+  border: none;
+  padding: 16px;
+  border-radius: 4px;
+  margin-top: 64px;
+  cursor: pointer;
+  outline: 1px solid transparent;
+  transition: 0.3s ease;
+}
+
+main #settings-tab button:hover {
+  box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.1);
+  outline: 1px solid black;
+}
+
+main #favorites-tab {
+  display: flex;
+  flex-direction: column;
+}
+
+main #favorites-tab h1 {
+  margin: 0;
+  font-size: 36px;
+  margin-top: 64px;
+}
+
+main #favorites-tab ul {
+  list-style: none;
+  margin-top: 64px;
+}
+
+main #favorites-tab ul li {
+  background: #f6f6f6;
+  padding: 16px;
+  border-radius: 4px;
+  margin: 8px 0px;
+}
+
+main #favorites-tab #settings-btn {
+  background: var(--accent);
+  color: white;
+  border: none;
+  padding: 16px;
+  border-radius: 4px;
+  margin-top: 64px;
+  cursor: pointer;
+  outline: 1px solid transparent;
+  transition: 0.3s ease;
+}
+
+main #favorites-tab #settings-btn:hover {
+  box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.1);
+  outline: 1px solid black;
+  margin-bottom: 16px;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="profile.css" type="text/css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <title>Profile</title>
+</head>
+<body>
+
+    <main>
+        <nav>
+            <img src="/LaughRX-Mascot.png" alt="LaughRX">
+            <div class="buttons">
+                <button id="sign-out">Sign out</button>
+                <button onclick="location.href='/app.html'" class="sign-up"><span class="material-symbols-outlined">undo</span></button>
+            </div>
+        </nav>
+        <section id="favorites-tab">
+            <h1></h1>
+            <ul id="favorites-list">
+                <label>Favorite Jokes</label>
+            </ul>
+            <button id="settings-btn" class="material-symbols-outlined">settings</button>
+        </section>
+        <section id="settings-tab">
+            <h2>Settings</h2>
+            <form id="update-displayname-form">
+                <label for="displayName">New Username</label>
+                <input type="text" placeholder="New Username" name="displayName">
+                <button type="submit">Change</button>
+            </form>
+            <button id="favorites-btn" class="material-symbols-outlined">undo</button>
+        </section>
+    </main>
+
+    <script type="module" src="profile.js"></script>
+    
+</body>
+</html>

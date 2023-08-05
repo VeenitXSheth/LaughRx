@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="auth.css" type="text/css" />
+    <title>Weave - Create account</title>
+</head>
+<body>
+
+    <main>
+        <nav>
+            <img src="/LaughRX-Mascot.png" alt="LaughRX">
+            <div class="buttons">
+                <button class="sign-in" onclick="location.href='/index.html'">Back</button>
+            </div>
+        </nav>
+        <section>
+            <form>
+                <h1>Create account.</h1>
+                <p>Fill out the information below to start laughing.</p>
+                <label for="username">Username</label>
+                <input type="text" name="username" placeholder="Username">
+                <label for="email">Email</label>
+                <input type="email" name="email" placeholder="Email address">
+                <label for="password">Password</label>
+                <input type="password" name="password" placeholder="Password">
+                <button type="submit">Create account</button>
+                <a href="/auth/login.html">Already have an account? Sign in</a>
+                <span>or</span>
+                <button id="create-with-google">
+                    <img src="/google.png" alt="Create account with Google button">
+                    Sign up with Google
+                </button>
+            </form>
+        </section>
+    </main>
+
+    <script src="signup.js" type="module"></script>
+    
+</body>
+</html>

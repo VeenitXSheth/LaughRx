@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap");
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+:root {
+  --accent: #ffc807;
+  --light-mode: white;
+  --dark-mode: #0a0a0a;
+  /* font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif; */
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: var(--accent);
+}
+
+main section {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main section .content {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  background: white;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.1);
+}
+
+main section .content #first {
+  font-size: 36px;
+  width: fit-content;
+  transform: rotate(180deg);
+}
+
+main section .content p {
+  margin: 6px 18px 6px;
+  width: fit-content;
+}
+
+main section .content #last {
+  font-size: 36px;
+  width: fit-content;
+  align-self: end;
+}
+
+main section button {
+  background: white;
+  border: none;
+  padding: 12px 32px 12px;
+  border-radius: 6px;
+  margin-top: 16px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  width: 100%;
+  font-family: Poppins;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  border: none;
+  outline: 1px solid transparent;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+main section button:hover {
+  margin-bottom: 16px;
+  box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.1);
+  outline: 1px solid black;
+}

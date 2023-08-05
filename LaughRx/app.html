@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="app.css" type="text/css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <title>LaughRX</title>
+</head>
+<body>
+
+    <main>
+        <nav>
+            <img src="/LaughRX-Mascot.png" alt="LaughRX">
+            <div class="buttons">
+                <button id="sign-out">Sign out</button>
+                <button onclick="location.href='/profile.html'" class="sign-up" id="github-btn">
+                    <span class="material-symbols-outlined">person</span>
+                </button>
+            </div>
+        </nav>
+        <section>
+            <div class="wrapper">
+                <div class="greeting">
+                    <h1 id="username"></h1>
+                    <p>Are you ready to laugh out loud?</p>
+                </div>
+                <div class="box">
+                    <div id="joke">
+                        <div class="content">
+                            <span id="first" class="material-symbols-outlined">format_quote</span>
+                            <p id="text">Generate a new joke to see it here!</p>
+                            <span id="last" class="material-symbols-outlined">format_quote</span>
+                        </div>
+                        <button id="favorite" class="material-symbols-outlined">favorite</button>
+                        <button id="share" class="material-symbols-outlined">ios_share</button>
+                    </div>
+                    <button id="generate-btn">New Joke</button>
+                </div>
+            </div>
+            <p id="alert">
+                <span class="material-symbols-outlined">done</span>
+                This is an alert message
+            </p>
+        </section>
+    </main>
+
+    <script type="module" src="app.js"></script>
+    
+</body>
+</html>

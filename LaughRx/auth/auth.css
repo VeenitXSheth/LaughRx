@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap");
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+:root {
+  --accent: #ffc807;
+  --light-mode: white;
+  --dark-mode: #0a0a0a;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+main nav {
+  height: fit-content;
+  width: 100%;
+  padding: 36px 0px 36px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  position: fixed;
+  z-index: 5;
+}
+
+main nav img {
+  height: 64px;
+}
+
+main nav .buttons {
+  display: flex;
+  align-items: center;
+}
+
+main nav .buttons button {
+  padding: 12px 32px 12px;
+  margin: 4px;
+  border-radius: 32px;
+  font-family: Poppins;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  border: none;
+  outline: 1px solid transparent;
+  cursor: pointer;
+  color: black;
+  background: #f6f6f6;
+  transition: 0.3s;
+}
+
+main nav .buttons button:hover {
+  margin-bottom: 16px;
+  box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.1);
+  outline: 1px solid var(--accent);
+}
+
+main section {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main section form {
+  display: flex;
+  flex-direction: column;
+  padding: 36px;
+  border-radius: 4px;
+}
+
+main section form h1 {
+  margin: 0;
+  font-size: 36px;
+}
+
+main section form p {
+  margin: 0;
+  margin-bottom: 36px;
+  font-size: 14px;
+}
+
+main section form label {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+main section form input {
+  margin-bottom: 16px;
+  padding: 12px 20px 12px;
+  border-radius: 20px;
+  border: 1px solid var(--dark-mode);
+  background: transparent;
+  cursor: text;
+  font-weight: 500;
+  transition: 0.3s ease;
+  outline: 1px solid transparent;
+}
+
+main section form input:hover {
+  outline: 1px solid gold;
+  border: 1px solid gold;
+}
+
+main section form input:focus {
+  outline: 1px solid gold;
+  border: 1px solid gold;
+}
+
+main section form button {
+  margin-top: 16px;
+  background: var(--accent);
+  color: var(--light-mode);
+  padding: 14px 32px 14px;
+  border-radius: 32px;
+  font-family: Poppins;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  border: none;
+  outline: 1px solid transparent;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+main section form button:hover {
+  margin-bottom: 16px;
+  box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.1);
+  outline: 1px solid black;
+}
+
+main section form a {
+  font-size: 12px;
+  margin-top: 8px;
+  text-decoration: none;
+  color: var(--dark-mode);
+  margin-bottom: 16px;
+}
+
+main section form a:hover {
+  text-decoration: underline;
+}
+
+main section form span {
+  display: block;
+  margin: auto;
+  margin-bottom: 8px;
+}
+
+main section form #create-with-google {
+  display: flex;
+  align-items: center;
+  background: #f5f5f7;
+  justify-content: center;
+  color: black;
+  outline: 1px solid transparent;
+  transition: 0.3s ease;
+}
+
+main section form #create-with-google img {
+  height: 24px;
+  margin-right: 12px;
+}
+
+main section form #create-with-google:hover {
+  outline: 1px solid var(--accent);
+}
+
+main section form #login-with-google {
+  display: flex;
+  align-items: center;
+  background: #f5f5f7;
+  justify-content: center;
+  color: black;
+  border: 1px solid transparent;
+  transition: 0.3s ease;
+}
+
+main section form #login-with-google img {
+  height: 24px;
+  margin-right: 12px;
+}
+
+main section form #login-with-google:hover {
+  border: 1px solid var(--dark-mode);
+}
