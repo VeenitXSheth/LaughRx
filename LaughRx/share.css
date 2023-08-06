@@ -96,6 +96,12 @@ main section button {
 
 main section button:hover {
   margin-bottom: 16px;
-  box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 6px 6px 6px rgba(0, 0, 0s, 0.1);
   outline: 1px solid black;
+}
+
+@media (max-width: 400px) {
+  main section .wrapper {
+    padding: 36px;
+  }
 }

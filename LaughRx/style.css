@@ -172,3 +172,24 @@ main section .buttons #github-btn span {
   padding: 12px;
   border-radius: 50%;
 }
+
+@media (max-width: 400px) {
+  main nav .buttons button {
+    padding: 8px 24px 8px;
+  }
+
+  main nav .buttons #join {
+    margin-right: 24px;
+  }
+
+  main section img {
+    width: 300px;
+    margin-right: 16px;
+  }
+
+  main section p {
+    font-size: 12px;
+    width: 300px;
+    margin-right: 16px;
+  }
+}

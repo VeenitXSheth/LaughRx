@@ -4,7 +4,7 @@ html,
 body {
   height: 100%;
   width: 100%;
-  overflow: hidden;
+  overflow-x: hidden;
   box-sizing: border-box;
 }
 
@@ -129,7 +129,7 @@ main section .wrapper #joke {
   background: #f6f6f6;
   padding: 16px;
   border-radius: 8px;
-  width: fit-content;
+  /* width: fit-content; */
 }
 
 main section .wrapper #joke .content {
@@ -226,4 +226,23 @@ main section #alert {
 
 main section #alert span {
   margin-right: 8px;
+}
+
+@media (max-width: 400px) {
+  main nav .buttons button {
+    padding: 8px 24px 8px;
+  }
+
+  main nav .buttons .sign-up {
+    margin-right: 24px;
+  }
+
+  main section .wrapper {
+    padding: 48px;
+  }
+
+  main section .wrapper .greeting h1 {
+    font-size: 30px;
+    margin-top: 32px;
+  }
 }

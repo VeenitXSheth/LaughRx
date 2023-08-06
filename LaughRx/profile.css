@@ -4,7 +4,7 @@ html,
 body {
   height: 100%;
   width: 100%;
-  overflow: hidden;
+  overflow-x: hidden;
   box-sizing: border-box;
 }
 
@@ -241,4 +241,46 @@ main #favorites-tab #settings-btn:hover {
   box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.1);
   outline: 1px solid black;
   margin-bottom: 16px;
+}
+
+@media (max-width: 400px) {
+  main nav .buttons #sign-out {
+    padding: 8px 24px 8px;
+  }
+
+  main nav .buttons .sign-up {
+    margin-right: 36px;
+  }
+
+  main nav .buttons .sign-up span {
+    padding: 6px;
+  }
+
+  main #favorites-tab h1 {
+    font-size: 24px;
+    margin: 0;
+    margin-top: 128px;
+    margin-right: 24px;
+  }
+
+  main #favorites-tab ul {
+    overflow-x: hidden;
+    overflow-y: auto;
+    text-align: justify;
+    margin: 0;
+    margin-top: 32px;
+    width: 375px;
+    height: 60%;
+    margin-bottom: 32px;
+  }
+
+  main #favorites-tab ul li {
+    width: 290px;
+  }
+
+  main #favorites-tab #settings-btn {
+    padding: 8px;
+    margin-top: 0px;
+    margin-right: 24px;
+  }
 }

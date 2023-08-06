@@ -70,7 +70,7 @@ const GPT35TurboMessage = [
 function OpenaiFetchAPI() {
     console.log("Calling GPT3")
     var url = "https://api.openai.com/v1/chat/completions";
-    var bearer = 'Bearer ' + 'ENTER OWN API KEY'
+    var bearer = 'Bearer ' + 'YOUR OWN API KEY'
     fetch(url, {
         method: 'POST',
         headers: {
@@ -166,7 +166,7 @@ const shareJokeBtn = document.getElementById('share')
 shareJokeBtn.addEventListener('click', async () => {
     try {
         const joke = document.getElementById('text').innerText
-        await navigator.share({ title: "Share Joke", url: `http://laughrx-10591.web.app/share.html?joke=${joke}` });
+        await navigator.share({ title: "Share Joke", url: `http://laughrx-10591.web.app/share?joke=${joke}` });
         console.log("Data was shared successfully");
         const alert = document.getElementById('alert');
         alert.innerHTML = '<span class="material-symbols-outlined">done</span>Joke Shared!'
